@@ -115,6 +115,7 @@ ul li img {
 
 .title {
   font-weight: 800;
+  color: var(--dark-grayish-blue);
 }
 
 .title:hover {
@@ -144,6 +145,10 @@ ul li img {
 
 .com-pic {
   margin-left: auto;
+}
+
+.mark-as-read{
+  color: var(--dark-grayish-blue);
 }
 
 .mark-as-read:hover {
