@@ -32,10 +32,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: inherit;
-}
-
 main {
   background-color: white;
   border-radius: 10px;
@@ -113,6 +109,10 @@ ul li img {
   color: var(--blue);
 }
 
+.user:visited{
+  color: var(--very-dark-blue);
+}
+
 .title {
   font-weight: 800;
   color: var(--dark-grayish-blue);
@@ -148,6 +148,10 @@ ul li img {
 }
 
 .mark-as-read{
+  color: var(--dark-grayish-blue);
+}
+
+.mark-as-read:visited{
   color: var(--dark-grayish-blue);
 }
 
