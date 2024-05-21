@@ -100,16 +100,16 @@ ul li img {
   height: 50px;
 }
 
-.user {
+a.user {
   font-weight: 800;
   color: var(--very-dark-blue);
 }
 
-.user:hover {
+a.user:hover {
   color: var(--blue);
 }
 
-.user:visited{
+a.user:visited{
   color: var(--very-dark-blue);
 }
 
