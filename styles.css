@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans";
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 500;
+  background-color: var(--light-grayish-blue);
+  color: var(--dark-grayish-blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 750px;
+  margin: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+header div {
+  display: flex;
+  align-items: end;
+  line-height: 20px;
+}
+
+header h3 {
+  color: var(--very-dark-blue);
+  font-weight: 800;
+}
+
+header span {
+  padding: 0px 10px;
+  margin-left: 10px;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+ul li.unread {
+  background-color: var(--light-grayish-blue);
+  border-radius: 10px;
+}
+
+ul li .n-title {
+  position: relative;
+}
+
+ul li.unread .dot {
+  position: relative;
+  left: 5px;
+  top: -5px;
+  padding: 2px 4px;
+  font-size: 3px;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+
+ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+.user {
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+
+.user:hover {
+  color: var(--blue);
+}
+
+.title {
+  font-weight: 800;
+}
+
+.title:hover {
+  color: var(--blue);
+}
+
+.group {
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.group:visited {
+  color: var(--blue);
+}
+
+.message {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--light-grayish-blue-2);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.message:hover {
+  background-color: var(--light-grayish-blue-1);
+}
+
+.com-pic {
+  margin-left: auto;
+}
+
+.mark-as-read:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 800px) {
+  main {
+    width: 90%;
+  }
+}
